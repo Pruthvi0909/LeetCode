@@ -1,0 +1,6 @@
+/* Write your T-SQL query statement below */
+
+
+
+select Weather.Id from Weather 
+join Weather as Weather2 on Weather2.RecordDate=subdate(Weather.RecordDate,1) and Weather.temperature>Weather2.temperature;
